@@ -1,0 +1,157 @@
+
+(:DESCRIPTIONS
+ ((:X
+   296
+   :Y
+   54
+   :ID
+   2
+   :NAME
+   ""
+   :FORMULA
+   "(if C A)"
+   :JUSTIFICATION
+   LOGIC::ASSUME)
+  (:X
+   79
+   :Y
+   45
+   :ID
+   1
+   :NAME
+   "given"
+   :FORMULA
+   "(not (not C))"
+   :JUSTIFICATION
+   LOGIC::ASSUME)
+  (:X
+   118
+   :Y
+   201
+   :ID
+   3
+   :NAME
+   ""
+   :FORMULA
+   "C"
+   :JUSTIFICATION
+   LOGIC::PC-PROVABILITY)
+  (:X
+   215
+   :Y
+   303
+   :ID
+   4
+   :NAME
+   ""
+   :FORMULA
+   "A"
+   :JUSTIFICATION
+   LOGIC::PC-PROVABILITY)
+  (:X
+   441
+   :Y
+   114
+   :ID
+   5
+   :NAME
+   ""
+   :FORMULA
+   "(or(not A)B)"
+   :JUSTIFICATION
+   LOGIC::ASSUME)
+  (:X
+   334
+   :Y
+   402
+   :ID
+   6
+   :NAME
+   ""
+   :FORMULA
+   "B"
+   :JUSTIFICATION
+   LOGIC::PC-PROVABILITY)
+  (:X
+   612
+   :Y
+   246
+   :ID
+   7
+   :NAME
+   ""
+   :FORMULA
+   "(if B D)"
+   :JUSTIFICATION
+   LOGIC::ASSUME)
+  (:X
+   859
+   :Y
+   70
+   :ID
+   9
+   :NAME
+   ""
+   :FORMULA
+   "(not(or D E))"
+   :JUSTIFICATION
+   LOGIC::ASSUME)
+  (:X
+   787
+   :Y
+   439
+   :ID
+   10
+   :NAME
+   ""
+   :FORMULA
+   "(not D)"
+   :JUSTIFICATION
+   LOGIC::PC-PROVABILITY)
+  (:X
+   477
+   :Y
+   527
+   :ID
+   8
+   :NAME
+   ""
+   :FORMULA
+   "D"
+   :JUSTIFICATION
+   LOGIC::PC-PROVABILITY)
+  (:X
+   600
+   :Y
+   638
+   :ID
+   11
+   :NAME
+   ""
+   :FORMULA
+   "(and (not C)E H (not A))"
+   :JUSTIFICATION
+   LOGIC::PC-PROVABILITY))
+ :STRUCTURES
+ ((:CONCLUSION 2 :PREMISES NIL)
+  (:CONCLUSION 1 :PREMISES NIL)
+  (:CONCLUSION 3 :PREMISES (1))
+  (:CONCLUSION 4 :PREMISES (3 2))
+  (:CONCLUSION 5 :PREMISES NIL)
+  (:CONCLUSION 6 :PREMISES (4 5))
+  (:CONCLUSION 7 :PREMISES NIL)
+  (:CONCLUSION 9 :PREMISES NIL)
+  (:CONCLUSION 10 :PREMISES (9))
+  (:CONCLUSION 8 :PREMISES (6 7))
+  (:CONCLUSION 11 :PREMISES (8 10)))
+ :INTERFACE
+ (:X
+  52
+  :Y
+  52
+  :WIDTH
+  1252
+  :HEIGHT
+  720
+  :PROOF-SYSTEM
+  LOGIC::PROPOSITIONAL-CALCULUS))
